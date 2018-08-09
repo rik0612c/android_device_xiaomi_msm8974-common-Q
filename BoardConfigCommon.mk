@@ -205,7 +205,7 @@ WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_AP           := "ap"
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 TARGET_PROVIDES_WCNSS_QMI        := true
-TARGET_USES_QCOM_WCNSS_QMI       := true
+TARGET_USES_QCOM_WCNSS_QMI       := false
 TARGET_USES_WCNSS_CTRL           := true
 
 -include vendor/xiaomi/msm8974-common/BoardConfigVendor.mk
