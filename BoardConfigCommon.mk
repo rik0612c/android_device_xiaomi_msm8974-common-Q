@@ -14,6 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
@@ -32,7 +33,6 @@ TARGET_NO_RADIOIMAGE         := true
 
 # Platform
 TARGET_BOARD_PLATFORM     := msm8974
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 
 # Architecture
 TARGET_ARCH         := arm
