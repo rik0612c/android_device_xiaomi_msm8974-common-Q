@@ -133,6 +133,7 @@ TARGET_KERNEL_ARCH                 := arm
 TARGET_KERNEL_CONFIG               := virgo_defconfig
 BOARD_DTBTOOL_ARGS                 := -2
 TARGET_KERNEL_CLANG_COMPILE        := false
+TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
