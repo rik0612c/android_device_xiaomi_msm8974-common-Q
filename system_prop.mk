@@ -134,6 +134,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_gl_backpressure=1
 
-# Maintainer
+# SoC
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=guaiyihu
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=MSM8974
