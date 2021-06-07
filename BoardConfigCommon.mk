@@ -168,7 +168,7 @@ TARGET_USES_OLD_MNC_FORMAT        := true
 
 # Recovery
 RECOVERY_FSTAB_VERSION             := 2
-TARGET_RECOVERY_DENSITY            := xhdpi
+TARGET_RECOVERY_DENSITY            := xxhdpi
 TARGET_RECOVERY_FSTAB              := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT       := "RGBX_8888"
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
