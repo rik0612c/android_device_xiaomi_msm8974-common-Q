@@ -241,7 +241,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libaudioclient_shim \
     libcnefeatureconfig \
-    librmnetctl
+    librmnetctl \
+    android.hardware.radio.config@1.0-service
 
 # RenderScript HAL
  PRODUCT_PACKAGES += \
