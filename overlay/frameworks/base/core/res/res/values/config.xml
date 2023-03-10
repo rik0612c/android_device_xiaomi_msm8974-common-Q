@@ -255,4 +255,10 @@
     
     <integer name="config_deviceHardwareKeys">83</integer>
     
+    <integer name="config_longPressOnAppSwitchBehavior">1</integer>
+    
+    <bool name="config_trustLegacyEncryption">true</bool>
+
+    <bool name="config_waitForMpctlOnBoot">true</bool>
+    
 </resources>
