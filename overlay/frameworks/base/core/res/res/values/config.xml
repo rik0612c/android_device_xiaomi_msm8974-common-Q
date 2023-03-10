@@ -244,4 +244,15 @@
 
     <!-- Disable rounded corners on windows to improve graphics performance -->
     <bool name="config_supportsRoundedCornersOnWindows">false</bool>
+    
+    <!-- Button Backlight -->
+    <bool name="config_button_brightness_support">true</bool>
+
+    <!-- Enable Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
+    
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+    
+    <integer name="config_deviceHardwareKeys">83</integer>
+    
 </resources>
