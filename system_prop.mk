@@ -1,3 +1,10 @@
+# ART
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-cpu-set=0,1,2,3 \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.dex2oat-swap=false
+
 # BPF
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.ebpf.supported=false
@@ -98,7 +105,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.sglte.eons_domain=ps \
     ro.qualcomm.perf.cores_online=1 \
-    dalvik.vm.dex2oat-swap=false \
     ro.gps.agps_provider=1 \
     persist.debug.wfd.enable=1 \
     persist.demo.hdmirotationlock=false \
