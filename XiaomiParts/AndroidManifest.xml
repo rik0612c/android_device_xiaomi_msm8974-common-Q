@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="org.lineageos.device"
     android:sharedUserId="android.uid.system" >
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -14,7 +15,8 @@
         android:supportsRtl="true" >
         <activity
             android:name="org.lineageos.device.DeviceSettingsActivity"
-            android:label="@string/advanced_settings" >
+            android:label="@string/advanced_settings" 
+            android:exported="true" >
             <intent-filter>
 		<action android:name="com.android.settings.action.IA_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -32,10 +34,15 @@
         <activity-alias
             android:name="org.lineageos.device.DeviceSettings"
             android:label="@string/advanced_settings"
+            android:exported="true"
             android:targetActivity="DeviceSettingsActivity" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity-alias>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:replace="android:authorities"/>
     </application>
 </manifest>
